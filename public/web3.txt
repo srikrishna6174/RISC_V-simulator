@@ -1,0 +1,14 @@
+{
+  "total_cycles": 859,
+  "total_instructions": 488,
+  "cpi": 1.760,
+  "data_transfer_instructions": 157,
+  "alu_instructions": 153,
+  "control_instructions": 178,
+  "stall_count": 368,
+  "data_hazards": 317,
+  "control_hazards": 51,
+  "branch_mispredictions": 51,
+  "stalls_data_hazards": 317,
+  "stalls_control_hazards": 51
+}

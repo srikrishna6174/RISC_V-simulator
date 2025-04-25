@@ -1,0 +1,14 @@
+
+Simulation Statistics:
+Total Cycles: 859
+Total Instructions: 488
+CPI: 1.760
+Data Transfer Instructions: 157
+ALU Instructions: 153
+Control Instructions: 178
+Total Stalls/Bubbles: 368
+Data Hazards: 317
+Control Hazards: 51
+Branch Mispredictions: 51
+Stalls Due to Data Hazards: 317
+Stalls Due to Control Hazards: 51

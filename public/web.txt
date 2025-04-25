@@ -1,0 +1,55 @@
+
+[
+  {
+    "cycle": 56,
+    "logs": [
+      {"stage":"Cycle","message":"Clock Cycle: 56"},
+      {"stage":"Fetch","message":"PC = 0x00000030, IR = 0x00008067"},
+      {"stage":"Decode","message":"opcode=0x67, rd=0, rs1=1, rs2=0, imm=0"},
+      {"stage":"Execute","message":"JALR Target = 20"},
+      {"stage":"Memory","message":"No memory op."},
+      {"stage":"WriteBack","message":"JALR: Reg x0 = 52"},
+      {"stage":"Cycle End","message":"End of cycle 56"}
+    ],
+    "registers": [{"reg":"x0","value":"0x0000000000000034"},{"reg":"x1","value":"0x0000000000000014"},{"reg":"x2","value":"0x0000000000000000"},{"reg":"x3","value":"0x0000000000000000"},{"reg":"x4","value":"0x0000000000000000"},{"reg":"x5","value":"0x0000000010000028"},{"reg":"x6","value":"0x0000000000000000"},{"reg":"x7","value":"0x0000000000000032"},{"reg":"x8","value":"0x0000000000000000"},{"reg":"x9","value":"0x0000000000000000"},{"reg":"xa","value":"0x0000000400000032"},{"reg":"xb","value":"0x0000000000000001"},{"reg":"xc","value":"0x0000000000000000"},{"reg":"xd","value":"0x0000000000000000"},{"reg":"xe","value":"0x0000000000000000"},{"reg":"xf","value":"0x0000000000000000"},{"reg":"x10","value":"0x0000000000000000"},{"reg":"x11","value":"0x0000000000000000"},{"reg":"x12","value":"0x0000000000000000"},{"reg":"x13","value":"0x0000000000000000"},{"reg":"x14","value":"0x0000000000000000"},{"reg":"x15","value":"0x0000000000000000"},{"reg":"x16","value":"0x0000000000000000"},{"reg":"x17","value":"0x0000000000000000"},{"reg":"x18","value":"0x0000000000000000"},{"reg":"x19","value":"0x0000000000000000"},{"reg":"x1a","value":"0x0000000000000000"},{"reg":"x1b","value":"0x0000000000000000"},{"reg":"x1c","value":"0x0000000000000000"},{"reg":"x1d","value":"0x0000000000000000"},{"reg":"x1e","value":"0x0000000000000000"},{"reg":"x1f","value":"0x0000000000000000"}],
+    "memory": [{"address":"0x10000000","value":"0xffffffd8"},{"address":"0x10000004","value":"0xffffffe2"},{"address":"0x10000008","value":"0xffffffec"},{"address":"0x1000000c","value":"0xfffffff6"},{"address":"0x10000010","value":"0x00000000"},{"address":"0x10000014","value":"0x0000000a"},{"address":"0x10000018","value":"0x00000014"},{"address":"0x1000001c","value":"0x0000001e"},{"address":"0x10000020","value":"0x00000028"},{"address":"0x10000024","value":"0x00000032"}]
+  },
+  {
+    "cycle": 57,
+    "logs": [
+      {"stage":"Cycle","message":"Clock Cycle: 57"},
+      {"stage":"Fetch","message":"PC = 0x00000014, IR = 0xfff00593"},
+      {"stage":"Decode","message":"opcode=0x13, rd=11, rs1=0, rs2=0, imm=-1"},
+      {"stage":"Execute","message":"ADDI: 52 + -1 = 51"},
+      {"stage":"Memory","message":"No memory op."},
+      {"stage":"WriteBack","message":"Reg x11 = 51"},
+      {"stage":"Cycle End","message":"End of cycle 57"}
+    ],
+    "registers": [{"reg":"x0","value":"0x0000000000000034"},{"reg":"x1","value":"0x0000000000000014"},{"reg":"x2","value":"0x0000000000000000"},{"reg":"x3","value":"0x0000000000000000"},{"reg":"x4","value":"0x0000000000000000"},{"reg":"x5","value":"0x0000000010000028"},{"reg":"x6","value":"0x0000000000000000"},{"reg":"x7","value":"0x0000000000000032"},{"reg":"x8","value":"0x0000000000000000"},{"reg":"x9","value":"0x0000000000000000"},{"reg":"xa","value":"0x0000000400000032"},{"reg":"xb","value":"0x0000000000000033"},{"reg":"xc","value":"0x0000000000000000"},{"reg":"xd","value":"0x0000000000000000"},{"reg":"xe","value":"0x0000000000000000"},{"reg":"xf","value":"0x0000000000000000"},{"reg":"x10","value":"0x0000000000000000"},{"reg":"x11","value":"0x0000000000000000"},{"reg":"x12","value":"0x0000000000000000"},{"reg":"x13","value":"0x0000000000000000"},{"reg":"x14","value":"0x0000000000000000"},{"reg":"x15","value":"0x0000000000000000"},{"reg":"x16","value":"0x0000000000000000"},{"reg":"x17","value":"0x0000000000000000"},{"reg":"x18","value":"0x0000000000000000"},{"reg":"x19","value":"0x0000000000000000"},{"reg":"x1a","value":"0x0000000000000000"},{"reg":"x1b","value":"0x0000000000000000"},{"reg":"x1c","value":"0x0000000000000000"},{"reg":"x1d","value":"0x0000000000000000"},{"reg":"x1e","value":"0x0000000000000000"},{"reg":"x1f","value":"0x0000000000000000"}],
+    "memory": [{"address":"0x10000000","value":"0xffffffd8"},{"address":"0x10000004","value":"0xffffffe2"},{"address":"0x10000008","value":"0xffffffec"},{"address":"0x1000000c","value":"0xfffffff6"},{"address":"0x10000010","value":"0x00000000"},{"address":"0x10000014","value":"0x0000000a"},{"address":"0x10000018","value":"0x00000014"},{"address":"0x1000001c","value":"0x0000001e"},{"address":"0x10000020","value":"0x00000028"},{"address":"0x10000024","value":"0x00000032"}]
+  },
+  {
+    "cycle": 58,
+    "logs": [
+      {"stage":"Cycle","message":"Clock Cycle: 58"},
+      {"stage":"Fetch","message":"PC = 0x00000018, IR = 0x01c000ef"},
+      {"stage":"Decode","message":"opcode=0x6f, rd=1, rs1=0, rs2=0, imm=28"},
+      {"stage":"Execute","message":"JAL Target = 52"},
+      {"stage":"Memory","message":"No memory op."},
+      {"stage":"WriteBack","message":"JAL: Reg x1 = 28"},
+      {"stage":"Cycle End","message":"End of cycle 58"}
+    ],
+    "registers": [{"reg":"x0","value":"0x0000000000000034"},{"reg":"x1","value":"0x000000000000001c"},{"reg":"x2","value":"0x0000000000000000"},{"reg":"x3","value":"0x0000000000000000"},{"reg":"x4","value":"0x0000000000000000"},{"reg":"x5","value":"0x0000000010000028"},{"reg":"x6","value":"0x0000000000000000"},{"reg":"x7","value":"0x0000000000000032"},{"reg":"x8","value":"0x0000000000000000"},{"reg":"x9","value":"0x0000000000000000"},{"reg":"xa","value":"0x0000000400000032"},{"reg":"xb","value":"0x0000000000000033"},{"reg":"xc","value":"0x0000000000000000"},{"reg":"xd","value":"0x0000000000000000"},{"reg":"xe","value":"0x0000000000000000"},{"reg":"xf","value":"0x0000000000000000"},{"reg":"x10","value":"0x0000000000000000"},{"reg":"x11","value":"0x0000000000000000"},{"reg":"x12","value":"0x0000000000000000"},{"reg":"x13","value":"0x0000000000000000"},{"reg":"x14","value":"0x0000000000000000"},{"reg":"x15","value":"0x0000000000000000"},{"reg":"x16","value":"0x0000000000000000"},{"reg":"x17","value":"0x0000000000000000"},{"reg":"x18","value":"0x0000000000000000"},{"reg":"x19","value":"0x0000000000000000"},{"reg":"x1a","value":"0x0000000000000000"},{"reg":"x1b","value":"0x0000000000000000"},{"reg":"x1c","value":"0x0000000000000000"},{"reg":"x1d","value":"0x0000000000000000"},{"reg":"x1e","value":"0x0000000000000000"},{"reg":"x1f","value":"0x0000000000000000"}],
+    "memory": [{"address":"0x10000000","value":"0xffffffd8"},{"address":"0x10000004","value":"0xffffffe2"},{"address":"0x10000008","value":"0xffffffec"},{"address":"0x1000000c","value":"0xfffffff6"},{"address":"0x10000010","value":"0x00000000"},{"address":"0x10000014","value":"0x0000000a"},{"address":"0x10000018","value":"0x00000014"},{"address":"0x1000001c","value":"0x0000001e"},{"address":"0x10000020","value":"0x00000028"},{"address":"0x10000024","value":"0x00000032"}]
+  },
+  {
+    "cycle": 59,
+    "logs": [
+      {"stage":"Cycle","message":"Clock Cycle: 59"},
+      {"stage":"Fetch","message":"PC = 0x00000034, IR = 0x00000000"},
+      {"stage":"EXIT","message":"Exit instruction encountered. Terminating simulation."}
+    ],
+    "registers": [{"reg":"x0","value":"0x0000000000000034"},{"reg":"x1","value":"0x000000000000001c"},{"reg":"x2","value":"0x0000000000000000"},{"reg":"x3","value":"0x0000000000000000"},{"reg":"x4","value":"0x0000000000000000"},{"reg":"x5","value":"0x0000000010000028"},{"reg":"x6","value":"0x0000000000000000"},{"reg":"x7","value":"0x0000000000000032"},{"reg":"x8","value":"0x0000000000000000"},{"reg":"x9","value":"0x0000000000000000"},{"reg":"xa","value":"0x0000000400000032"},{"reg":"xb","value":"0x0000000000000033"},{"reg":"xc","value":"0x0000000000000000"},{"reg":"xd","value":"0x0000000000000000"},{"reg":"xe","value":"0x0000000000000000"},{"reg":"xf","value":"0x0000000000000000"},{"reg":"x10","value":"0x0000000000000000"},{"reg":"x11","value":"0x0000000000000000"},{"reg":"x12","value":"0x0000000000000000"},{"reg":"x13","value":"0x0000000000000000"},{"reg":"x14","value":"0x0000000000000000"},{"reg":"x15","value":"0x0000000000000000"},{"reg":"x16","value":"0x0000000000000000"},{"reg":"x17","value":"0x0000000000000000"},{"reg":"x18","value":"0x0000000000000000"},{"reg":"x19","value":"0x0000000000000000"},{"reg":"x1a","value":"0x0000000000000000"},{"reg":"x1b","value":"0x0000000000000000"},{"reg":"x1c","value":"0x0000000000000000"},{"reg":"x1d","value":"0x0000000000000000"},{"reg":"x1e","value":"0x0000000000000000"},{"reg":"x1f","value":"0x0000000000000000"}],
+    "memory": [{"address":"0x10000000","value":"0xffffffd8"},{"address":"0x10000004","value":"0xffffffe2"},{"address":"0x10000008","value":"0xffffffec"},{"address":"0x1000000c","value":"0xfffffff6"},{"address":"0x10000010","value":"0x00000000"},{"address":"0x10000014","value":"0x0000000a"},{"address":"0x10000018","value":"0x00000014"},{"address":"0x1000001c","value":"0x0000001e"},{"address":"0x10000020","value":"0x00000028"},{"address":"0x10000024","value":"0x00000032"}]
+  }
+]
